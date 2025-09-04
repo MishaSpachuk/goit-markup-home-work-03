@@ -22,22 +22,22 @@
 /*=========================BODY==========================*/
 
 body {
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     color: var(--color-slate);
     background-color: var(--color-wite);
+    padding: 0;
+    margin: 0;
 }
 
-h1,h2,h3,h5,h5, p {
-    margin: 0;
+h1,h2,h3,h4,h5,p {
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    margin: 0;
 }
 
 ul, li {
-    margin: 0;
     padding: 0;
+    margin: 0;
     list-style-type: none;
-    font-family: "Roboto", sans-serif;
 }
 
 a {
@@ -45,32 +45,106 @@ a {
     color: currentColor;
 }
 
+
+.button {
+    font-family: "Roboto", sans-serif;
+    border: none;
+    background-color: var(--color-iris);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-white);
+    cursor: pointer;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    margin: 0px auto;
+}
+
+.button:hover,
+:focus {
+    background-color: var(--color-okean);
+}
+
+.conteiner {
+    max-width: 1440px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*====================HEADER======================*/
 
-.logo {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.16667;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--color-navy-blue);
-    font-family: "Raleway", sans-serif;
-}
-.logo-part {
-    color: var(--color-iris);
-    font-family: "Raleway", sans-serif;
+.page-header {
+    border-bottom: 1px solid var(--color-corlnflower);
 }
 
-.nav-link {
+.header-nav { 
+    gap: 75px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
+    display: flex;
+    align-items: center;
 }
 
-.nav-link:hover {
+.conteiner-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-header-web {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: var(--color-iris);
+    font-family: "Raleway", sans-serif;
+}
+
+.logo-header-studio {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-navy-blue);
+}
+
+.header-addres {
+    font-style: normal;
+}
+
+.nav-list {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-navy-blue);
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+} 
+
+.nav-li:hover, :focus {
+    color: var(--color-ocean);
+}
+
+.nav-link-a {
+    display: block;
+    padding: 24px 0;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .contacts-link {
@@ -81,13 +155,15 @@ a {
     color: var(--color-slate);
 }
 
-.contacts-link:hover {
-    color: var(--color-iris);
+.contacts-list-li:hover,
+:focus {
+    color: var(--color-ocean);
 }
 
 /*=====================SECTION 1==================*/
 .title {
-font-weight: 700;
+    max-width: 500px;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07143;
     letter-spacing: 0.02em;
@@ -96,6 +172,12 @@ font-weight: 700;
 }
 
 .hero-baner {
+    align-items: center;
+    gap: 20px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: var(--color-navy-blue);
 }
 
@@ -117,7 +199,13 @@ font-weight: 700;
     background-color: var(--color-ocean);
 }
 
+
 /*=====================SECTION 2==================*/
+
+.points {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .points-text {
     font-weight: 400;
@@ -135,6 +223,12 @@ letter-spacing: 0.02em;
 color: var(--color-grey);
 }
 
+.points-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
 /*=====================SECTION 3==================*/
 
 .team {
@@ -148,6 +242,7 @@ color: var(--color-grey);
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-navy-blue);
+    
 }
 
 .team-name {
@@ -159,10 +254,17 @@ color: var(--color-grey);
     color: var(--color-navy-blue);
 }
 
+.team-foto {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
 .team-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-slate);
